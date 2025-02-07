@@ -1,0 +1,14 @@
+test_features_path = "/content/drive/MyDrive/Sole/dataset/test_features.csv"
+X_new_test = pd.read_csv(test_features_path)
+IDs = X_new_test["ID"]
+X_new_test = X_new_test.drop(columns=['ID'])
+X_new_test = scaler.transform(X_new_test)
+
+best_model = rf_model
+model_name = "Random Forest"
+y_new_preds = best_model.predict(X_new_test)
+y_new_preds_clades = label_encoder.inverse_transform(y_new_preds)
+
+submission = pd.DataFrame({"ID": IDs, "Clade": y_new_preds_clades})
+submission.to_csv("submission.csv", index=False)
+print(f"✅ saved result to submission.csv by {model_name}.")
