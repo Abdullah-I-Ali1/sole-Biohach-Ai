@@ -37,5 +37,6 @@ This repository contains workflow that demonstrates the training and evaluation 
 
 Analyzed results to identify SARS-CoV-2 lineages with high precision.
 
-Implementation
+## Implementation 
+
 The entire workflow was implemented using 100% Python, utilizing libraries such as scikit-learn, TensorFlow, Pandas, and NumPy.
