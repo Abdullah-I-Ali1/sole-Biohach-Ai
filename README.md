@@ -1,12 +1,14 @@
 
-Overview
+## Overview
+
 This project aims to analyze the genomic signatures of SARS-CoV-2 using machine learning (ML) and deep learning (DL) techniques in an alignment-free approach.
 
-Problem Statement
+## Problem Statement
+
 Traditional alignment-based phylogenetic methods require significant computational resources. This project provides an efficient alternative by extracting genomic signatures and applying ML and DL models to classify SARS-CoV-2 lineages.
 
-Steps Taken
-Data Processing
+## Steps Taken 
+# Data Processing
 
 Read genomic sequence data from input files.
 
@@ -28,9 +30,6 @@ Support Vector Machine (SVM)
 
 Logistic Regression
 
-Naïve Bayes
-
-Decision Tree
 
 Developed a deep learning model using Keras/TensorFlow.
 
