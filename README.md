@@ -8,36 +8,32 @@ This project aims to analyze the genomic signatures of SARS-CoV-2 using machine 
 Traditional alignment-based phylogenetic methods require significant computational resources. This project provides an efficient alternative by extracting genomic signatures and applying ML and DL models to classify SARS-CoV-2 lineages.
 
 ## Steps Taken 
-# Data Processing
 
-Read genomic sequence data from input files.
+> Data Processing
 
-Clean and preprocess the data to remove invalid values.
-
-Feature Extraction
-
-Compute dinucleotide and trinucleotide frequencies using Python.
-
-Store the extracted features in a suitable format for model training.
-
-Model Development
-
-Implemented multiple machine learning models:
-
-Random Forest
-
-Support Vector Machine (SVM)
-
-Logistic Regression
+## AI Model Submission
 
 
-Developed a deep learning model using Keras/TensorFlow.
+This repository contains workflow that demonstrates the training and evaluation of multiple machine learning models for classification. The dataset used in this project is train.csv, which contains labeled data for training and testing purposes.
 
-Split the data into training and testing sets for evaluation.
 
-Evaluation and Analysis
+## Data Preprocessing:
 
-Calculated accuracy and other performance metrics to compare model effectiveness.
+> Missing value handling
+> Feature scaling using StandardScaler
+> Label encoding of categorical values
+> Oversampling using SMOTE to handle class imbalance
+> Model Training & Evaluation:
+
+## Models used:
+
+
+ Random Forest
+ XGBoost
+ LightGBM
+ Neural Network (TensorFlow/Keras)
+
+## Aim:
 
 Analyzed results to identify SARS-CoV-2 lineages with high precision.
 
